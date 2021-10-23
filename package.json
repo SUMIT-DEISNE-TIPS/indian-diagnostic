@@ -1,6 +1,6 @@
 {
   "name": "indian-diagnostic-app",
-  "homepage": "https://gouravduary.github.io/indian-diagnostic/index.html",
+  "homepage": "https://gouravduary.github.io/indian-diagnostic/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
