@@ -20,7 +20,7 @@ function Header() {
                     <div class="nav_list">
 
                         <li>
-                            <Link exact activeClassName="active" to="/Home">Home</Link>
+                            <Link exact activeClassName="active" to="/">Home</Link>
                         </li>
                         <li>
                             <Link exact activeClassName="active" to="/About">About</Link>
@@ -56,7 +56,7 @@ function Header() {
             </div>
 
             <Switch>
-                <Route exact path="/Home" component={Home} />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/About" component={About} />
                 <Route exact path="/Contact" component={Contact} />
                 <Route exact path="/Service" component={Service} />
