@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/Logo.png";
 import phone from "../assets/Phone.png";
-import { Switch, Route, NavLink } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import About from '../Pages/About';
 import Home from '../Pages/Home';
 import Service from '../Pages/Service';
@@ -20,16 +20,16 @@ function Header() {
                     <div class="nav_list">
 
                         <li>
-                            <NavLink exact activeClassName="active" to="/">Home</NavLink>
+                            <Link exact activeClassName="active" to="/Home">Home</Link>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/About">About</NavLink>
+                            <Link exact activeClassName="active" to="/About">About</Link>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/Service">Service</NavLink>
+                            <Link exact activeClassName="active" to="/Service">Service</Link>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/Contact">Contact</NavLink>
+                            <Link exact activeClassName="active" to="/Contact">Contact</Link>
                         </li>
 
                     </div>
@@ -56,7 +56,7 @@ function Header() {
             </div>
 
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/Home" component={Home} />
                 <Route exact path="/About" component={About} />
                 <Route exact path="/Contact" component={Contact} />
                 <Route exact path="/Service" component={Service} />
